@@ -1,0 +1,64 @@
+/* styles/FloatingActionButton.css */
+.fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .fab-button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .fab-menu {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .fab-menu.expanded {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .fab-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .fab-menu li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .fab-menu li button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fab-menu li button:hover {
+    background-color: #0056b3; /* Darker Blue */
+  }
+  

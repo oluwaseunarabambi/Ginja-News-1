@@ -1,0 +1,329 @@
+/* Reset and base styles */
+body {
+    font-family: 'Times', serif;
+    margin: 0;
+    padding: 0;
+    background-color:#f9f4ed; /* Light background color */
+    color: #2a2a2a; /* Main text color */
+}
+
+/* Header */
+header {
+    background-color: #2B7A78; /* Dark teal */
+    color: #FEFFFF; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px; /* Increase font size for header */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #1ed7d7b8; /* White text */
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h2 {
+    margin: 0;
+}
+
+#hero p {
+    margin: 10px 0;
+}
+
+/* Search form */
+#search-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#search-form input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #17252A; /* Main text color */
+    border-radius: 5px;
+}
+/* Focus styles */
+:focus {
+    outline: 2px solid #007bff; /* Example outline color */
+    outline-offset: 2px;
+}
+  
+/* Additional focus styles for buttons */
+.button:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Example box shadow */
+}
+/* Buttons */
+button {
+    background-color: #13cec5; /* Light cyan button background color */
+    color: #14dfdf; /* White button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #2B7A78; /* Dark cyan button background color on hover */
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #17252A; /* Dark background color */
+    color: #FEFFFF; /* White text */
+}
+
+/* Light mode */
+.light-mode {
+    background-color: #FEFFFF; /* White background color */
+    color: #17252A; /* Dark text */
+}
+
+.datetime {
+    display: flex;
+    font-size: 14px;
+    color: #332d2da9; /* Dark text color */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.datetime p {
+    margin: 0;
+    padding: 5px; /* Add padding for spacing */
+    font-weight: bold;
+    background-color: #f9f4ed; /* Light background color */
+    border-radius: 5px; /* Add rounded corners */
+    margin-left: 45px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Read article button */
+.ReadArticleButton {
+    background-color: #3AAFA9; /* Teal */
+    color: #FEFFFF; /* White text */
+    margin-top: 1rem;
+}
+
+.ReadArticleButton:hover {
+    background-color: #2B7A78; /* Dark teal on hover */
+}
+
+#latest-headlines {
+    padding: 40px;
+}
+
+#articles-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-section {
+    margin-top: 40px;
+}
+
+#comments-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#comments-section form {
+    margin-bottom: 20px;
+}
+
+#comments-section textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#comments-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#comments-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#comments-section button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#comments-section button:hover {
+    background-color: #0056b3;
+}
+
+#comments-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#comments-section li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#comments-section li:last-child {
+    margin-bottom: 0;
+}
+
+
+.social-media-buttons button {
+    margin-right: 10px;
+}
+
+/* Pagination */
+#pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #3AAFA9; /* Teal */
+    color: #FEFFFF; /* White text */
+    border: none;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #2B7A78; /* Dark teal on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #2B7A78; /* Dark teal */
+    color: #FEFFFF; /* White text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer text */
+footer p {
+    margin: 0;
+}
+
+
+/* Image Styling */
+#articles-list img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add spacing between images and surrounding content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 5px; /* Apply a slight border radius */
+}
+
+/* Image Placeholder */
+.no-image {
+    height: 150px; /* Set a fixed height for the placeholder */
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px; /* Apply border radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+}
+/* Play button */
+.play-button {
+    background-color: #3AAFA9; /* Teal */
+    color: #FEFFFF; /* White text */
+    margin-top: 1rem;
+    margin-right: 0.5rem; /* Adjust margin for spacing between buttons */
+}
+
+.play-button:hover {
+    background-color: #2B7A78; /* Dark teal on hover */
+}
+
+/* Pause button */
+.pause-button {
+    background-color: #FF6B6B; /* Red */
+    color: #FEFFFF; /* White text */
+    margin-top: 1rem;
+    margin-left: 0.5rem; /* Adjust margin for spacing between buttons */
+}
+
+.pause-button:hover {
+    background-color: #D13F3F; /* Dark red on hover */
+}
+/* New Styles */
+/* Headline Styles */
+#latest-headlines h2 {
+    font-size: 24px; /* Decrease font size for headlines */
+    margin-bottom: 20px; /* Add spacing below headlines */
+    color: #666; /* Darken headline color for better contrast */
+}
+
+/* Article Description */
+#articles-list p {
+    color: #666; /* Darken description text color */
+}
+
+/* Hover Effects */
+#articles-list li:hover {
+    transform: translateY(-2px); /* Add a slight lift effect on hover */
+}
+
+/* Pagination Active State */
+#pagination button.active {
+    background-color: #14dfdf; /* Highlight active page button */
+}
+
+/* Footer Link Styling */
+footer a {
+    color: #FEFFFF; /* White text for footer links */
+    text-decoration: underline; /* Underline footer links */
+}
+
+footer a:hover {
+    color: #14dfdf; /* Change link color on hover */
+}
